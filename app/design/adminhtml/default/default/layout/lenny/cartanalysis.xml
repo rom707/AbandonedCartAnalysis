@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<layout>
+    <adminhtml_product_diagram>
+        <reference name="head">
+            <action method="addItem">
+                <type>js</type>
+                <script>chart/Chart.bundle.js</script>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="lenny_cartanalysis/adminhtml_catalog_product_edit" name="lenny/diagram">
+                <!--<action method="setTemplate"><name>lenny/diagram.phtml</name></action>
+                <block type="lenny_cartanalysis/adminhtml_catalog_product_edit_form" name="lenny/diagram"> -->
+            </block>
+        </reference>
+    </adminhtml_product_diagram>
+    <adminhtml_totalstat_index>
+        <reference name="head">
+            <action method="addItem">
+                <type>js</type>
+                <script>chart/Chart.bundle.js</script>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="lenny_cartanalysis/adminhtml_catalog_totalstat_edit" name="lenny/diagram">
+                <!--<action method="setTemplate"><name>lenny/diagram.phtml</name></action>
+                <block type="lenny_cartanalysis/adminhtml_catalog_product_edit_form" name="lenny/diagram"> -->
+            </block>
+        </reference>
+    </adminhtml_totalstat_index>
+</layout>

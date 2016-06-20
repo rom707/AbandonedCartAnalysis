@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <cartanalysis module="adminhtml">
+            <label>Abandoned Cart Analysis</label>
+            <tab>catalog</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <tools translate="lable">
+                    <label>Tools</label>
+                    <sort_order>3000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <send translate="label">
+                            <lable>Reminder</lable>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>lenny_cartanalysis/adminhtml_system_config_form_button</frontend_model>
+                            <comment>Send mails to customers with abandoned products.</comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </send>
+                    </fields>
+                </tools>   
+            </groups>
+        </cartanalysis>
+    </sections>
+</config>

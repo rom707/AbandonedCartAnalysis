@@ -1,0 +1,16 @@
+<script type="text/javascript">
+    //<![CDATA[
+    function Send(){
+        new Ajax.Request('<?php echo $this->getAjaxSendOutUrl() ?>', {
+            method:     'get',
+            onSuccess:  function(transport){
+                var result = transport.responseText;
+                if(result){                  
+                    location.reload();
+                }
+            }
+        })  
+    }
+    //]]>
+</script>
+<?php echo $this->getButtonHtml() ?>

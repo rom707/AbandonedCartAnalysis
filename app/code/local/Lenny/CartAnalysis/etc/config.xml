@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Lenny_CartAnalysis>
+            <version>1.0.0</version>
+        </Lenny_CartAnalysis>
+    </modules>
+
+    <global>
+
+        <blocks>
+            <lenny_cartanalysis>
+                <class>Lenny_CartAnalysis_Block</class>
+            </lenny_cartanalysis>
+        </blocks>
+        
+        <helpers>
+            <lenny_cartanalysis>
+                <class>Lenny_CartAnalysis_Helper</class>
+            </lenny_cartanalysis>
+        </helpers>
+        
+    </global>
+    
+    <frontend>
+        <routers>
+            <lenny_cartanalysis>
+                <use>standard</use>
+                <args>
+                    <module>Lenny_CartAnalysis</module>
+                    <frontName>CartAnalysis</frontName>
+                </args>
+            </lenny_cartanalysis>
+        </routers>  
+    </frontend>
+    
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <lenny_cartanalysis before="Mage_Adminhtml">Lenny_CartAnalysis_Adminhtml</lenny_cartanalysis>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <lenny_cartanalysis>
+                    <file>lenny/cartanalysis.xml</file>
+                </lenny_cartanalysis>
+            </updates>
+        </layout>
+    </adminhtml>    
+</config>
+
+
+

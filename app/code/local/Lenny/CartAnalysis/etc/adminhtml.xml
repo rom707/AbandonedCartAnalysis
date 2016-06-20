@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <cartanalysis>
+                                        <title>Abandoned Cart Analysis</title>
+                                    </cartanalysis>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children> 
+            </admin>
+        </resources>
+    </acl>
+    
+    <menu>
+        <catalog>
+            <children>
+                <lenny_cartanalysis translate="title" module="lenny_cartanalysis">
+                    <title>Abandoned Stat</title>
+                        <children>
+                            <product translate="title" module="lenny_cartanalysis">
+                                <title>Product</title>
+                                <action>adminhtml/product/</action>
+                            </product>
+                            <customer translate="title" module="lenny_cartanalysis">
+                                <title>Customer</title>
+                                <action>adminhtml/customcart/</action>
+                            </customer>
+                            <totalstat translate="title" module="lenny_cartanalysis">
+                                <title>Total statistics</title>
+                                <action>adminhtml/totalstat/</action>
+                            </totalstat>
+                        </children>
+                </lenny_cartanalysis>
+            </children>
+        </catalog>  
+    </menu>
+</config>
+
+
+
+
